@@ -89,7 +89,8 @@ def handle(msg):
         timezone = pytz.timezone(timezone_str)
         doit(chat_id, timezone)
     elif content_type == 'text' and '@time_image_bot' in msg['text']:
-        doit(chat_id, DEFAULT_TIMEZONE_STR)
+        timezone = pytz.timezone(DEFAULT_TIMEZONE_STR)
+        doit(chat_id, timezone)
     
 api_key = ''
 with open('key_file.txt', 'r') as fin:
