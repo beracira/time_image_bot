@@ -37,7 +37,7 @@ def doit(chat_id, timezone):
     elif num <= 20:
         temp = "   幾\n   點\n   了\n   ？\n"
     elif num <= 30:
-        temp = "   愛\n   幾\n   點\n   幾\n   點\n！"
+        temp = "   愛\n   幾\n   點\n   幾\n   點\n   ！"
 
     print (temp)
     
