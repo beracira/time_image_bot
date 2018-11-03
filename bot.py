@@ -9,6 +9,7 @@ import pytz
 from tzwhere import tzwhere
 import sqlite3
 from telepot.loop import MessageLoop
+import random
 
 # print = pprint.PrettyPrinter().pprint
 
@@ -30,6 +31,14 @@ def doit(chat_id, timezone):
     
     temp += "\n 了!!\n"
     
+    num = random.randint(1, 100)
+    if num <= 10:
+        temp = "我\n餓\n了\n！\n"
+    elif num <= 20:
+        temp = "幾\n點\n了\n？\n"
+    elif num <= 30:
+        temp = "愛\n幾\n點\n幾\n點\n！"
+
     print (temp)
     
     with open('temp.txt', 'w') as fout:
