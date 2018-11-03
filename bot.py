@@ -33,11 +33,11 @@ def doit(chat_id, timezone):
     
     num = random.randint(1, 100)
     if num <= 10:
-        temp = "我\n餓\n了\n！\n"
+        temp = "   我\n   餓\n   了\n   ！\n"
     elif num <= 20:
-        temp = "幾\n點\n了\n？\n"
+        temp = "   幾\n   點\n   了\n   ？\n"
     elif num <= 30:
-        temp = "愛\n幾\n點\n幾\n點\n！"
+        temp = "   愛\n   幾\n   點\n   幾\n   點\n！"
 
     print (temp)
     
